@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #000;
+}
+
+/* Navbar*/
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  background-color: #ffe74c;
+  justify-content: space-between;
+  padding: 10px 7%;
+  align-items: center;
+  border-bottom: 1px solid #c2bfbf;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  justify-content: space-evenly;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+nav ul.slide {
+  opacity: 0;
+  transform: translateX();
+}
+
+nav ul li a {
+  font-weight: 500;
+}
+nav .Navbar-click li a:hover {
+  color: #fcfcfc;
+  transition: 0.3s linear;
+}
+nav ul li a::after {
+  content: "";
+  display: block;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #003566;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+nav ul li a:hover::after {
+  transform: scaleX(0.5);
+}
+
+nav ul li a:link,
+a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+.Navbar .Logo .navbar-logo img {
+  height: auto;
+  width: 90px;
+  max-width: 100%;
+}
+
+/* Hamburger Menu */
+.kanan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+.kanan #login {
+  padding: 5px 15px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #003566;
+  background-color: #00000000;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+.kanan #login span {
+  padding-top: 3px;
+}
+.kanan #login:hover {
+  color: #000000;
+  background-color: #0035664d;
+}
+.kanan .menu-toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  visibility: hidden;
+}
+.kanan .menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+@media (max-width: 630px) {
+  html {
+    font-size: 62.5%;
+  }
+  .kanan .menu-toggle {
+    visibility: visible;
+    cursor: pointer;
+  }
+  .Navbar .Navbar-click {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #ffffff;
+    filter: drop-shadow(8px 8px 10px gray);
+    /* opacity: 80%; */
+    height: 100vh;
+    width: 200px;
+    transition: 0.3s;
+  }
+  .Navbar-click.active {
+    right: 0;
+  }
+  .Navbar .Navbar-click li a {
+    color: #000000;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .Navbar .Navbar-click a:hover {
+    color: #003566;
+  }
+  .Navbar .Navbar-click a::after {
+    transform-origin: 0 0;
+    border-bottom: 2px solid #003566;
+  }
+  .Navbar .Navbar-click a:hover::after {
+    transform: scaleX(0.5);
+  }
+  .menu-toggle span:nth-child(1) {
+    transform-origin: 0 0;
+  }
+  .menu-toggle span:nth-child(3) {
+    transform-origin: 0 100%;
+  }
+  .Navbar .kanan .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(2px, 1px);
+  }
+  .Navbar .kanan .menu-toggle.active span:nth-child(2) {
+    transform: scale(0);
+  }
+  .Navbar .kanan .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(1px, 0);
+  }
+}

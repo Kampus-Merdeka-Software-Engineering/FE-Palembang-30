@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LesSugar</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Style -->
+    <link rel="stylesheet" href="CSS/cek-diabetes.css" />
+    <link rel="stylesheet" href="CSS/navbar.css" />
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <section class="section-navbar">
+      <nav class="Navbar">
+        <div class="Logo">
+          <!-- <h2>LesSugar</h2> -->
+          <a href="#" class="navbar-logo"
+            ><img src="asset/logo.png" alt="logo"
+          /></a>
+        </div>
+
+        <ul class="Navbar-click">
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="cek_diabetes.html">Diabetes Check</a></li>
+          <li><a href="ask-doctor.html">Ask Doctor</a></li>
+          <li><a href="about-team.html">About Team</a></li>
+        </ul>
+        <div class="kanan">
+          <button class="login" id="login">
+            <i data-feather="user"></i><span>| Login</span>
+          </button>
+          <div class="menu-toggle">
+            <!-- <input type="checkbox" /> -->
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- Navbar end  -->
+
+    <!-- page1 start -->
+    <div class="content">
+      <div class="kotak1" id="satu">
+        <h1>Diabetes Check</h1>
+      </div>
+      <div class="kotak2" id="dua">
+        <div class="isi">
+          <div class="col1">
+            <img src="asset/profile.jpg" alt="gambar" />
+          </div>
+          <div class="col2">
+            <form onsubmit="">
+              <h2>Enter Your Identity</h2>
+              <div class="form-group">
+                <label class="form-label" for="name">Name :</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="name">Email :</label>
+                <input
+                  class="form-input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="name">Age :</label>
+                <textarea
+                  class="form-input"
+                  id="message"
+                  name="pesan"
+                  row="4"
+                  required
+                ></textarea>
+              </div>
+              <a href="soal_diabetes1.html"
+                ><button class="form-button" type="submit">Kirim</button></a
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- page1 end -->
+
+    <!-- footer start -->
+    <footer class="bawah">
+      <div class="logo-footer">
+        <a><img src="asset/revo.png" alt="RevoU" /></a>
+        <a><img src="asset/logo.png" alt="LesSugar" /></a>
+        <a><img src="asset/KM.png" alt="Kampus Merdeka" /></a>
+      </div>
+      <h5>Copyright.2023 | by Group 30 Section Palembang</h5>
+    </footer>
+    <!-- footer end -->
+    <script>
+      feather.replace();
+    </script>
+    <script src="JS/Lessugar.js"></script>
+  </body>
+</html>

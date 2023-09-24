@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #000;
+}
+
+.content {
+  min-height: 100vh;
+  display: flex;
+  width: 100%;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  /* padding: 20px 7%; */
+}
+.kotak1 {
+  height: 300px;
+  width: 100%;
+  top: 60px;
+  /* padding: 20px 7%; */
+  background-color: #ffe74c;
+  text-align: center;
+}
+.kotak1 h1 {
+  margin-top: 80px;
+}
+.layanan {
+  padding: 10px 7%;
+}
+.layanan .isi {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  z-index: 2;
+  /* width: 100%; */
+  padding-top: -50px;
+  padding: 5px 7%;
+  height: 500px;
+  margin-top: -100px;
+  /* top: 190px; */
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*dashboard 2*/
+/* .section-dash2 {
+  /*background-color: #FFC300;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 600px;
+  margin: none;
+  margin-left: -50px;
+}
+
+.section-dash2 h1 {
+  text-align: center;
+  padding-bottom: 50px;
+  margin-left: 200px;
+}
+
+.layanan {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 350px;
+  width: 900px;
+  height: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
+
+.layanan .left-dash2 {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 3em;
+}
+.text1 {
+  padding-left: 25px;
+}
+.layanan .center-dash2 {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 3em;
+}
+.text2 {
+  padding-left: 25px;
+}
+
+.percentage {
+  height: 100%;
+  background-color: #4caf50;
+  width: 0;
+}
+
+.layanan .right-dash2 {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 3em;
+}
+.text3 {
+  padding-left: 30px;
+}
+
+.layanan img {
+  width: 200px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border: 1px solid grey;
+  /* box-shadow: 3px 2px 2px 2px grey; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.layanan button {
+  background-color: #ffe74c;
+  border: 1px solid grey;
+  /* box-shadow: 3px 2px 2px 2px grey; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  stroke: none;
+  width: 202px;
+  height: 60px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  cursor: pointer;
+}
+
+/* =================== */
+.form-group {
+  margin-bottom: 15px;
+}
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.form-input {
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form-button {
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 80px;
+  cursor: pointer;
+}
+.form-button:hover {
+  background-color: rgb(3, 99, 3);
+}
+
+/* footer */
+.footer {
+  max-height: 80vh;
+}
+.bawah {
+  height: 200px;
+  /* width: 100%; */
+  background-color: #ff5964;
+  text-align: center;
+  padding: 50px 7%;
+  margin-top: -50px;
+  padding-bottom: 10px;
+}
+
+.logo-footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 7%;
+  max-height: 40vh;
+}
+
+.logo-footer a img {
+  height: auto;
+  width: 80px;
+  /* left: 100px;
+    right: 100px; */
+}
+
+/* ========== RESPONSIVE PAGE ============== */
+
+/*ukuran tablet*/
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 50%;
+  }
+}
+/*ukuran mobile*/
+/* @media screen and (max-width: 576px) {
+ 
+} */

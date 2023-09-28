@@ -30,21 +30,42 @@ body {
 }
 .anggota {
   display: flex;
-  /* margin: 80px; */
   background-color: rgb(255, 195, 0, 0.4);
   border-radius: 20px;
-  height: 300px;
-  align-items: center;
-  padding-inline: 50px;
+  height: 200px;
+  align-items: flex-start;
+  padding: 50px;
+  justify-content: center;
 }
-
+.anggota .profil {
+  width: 30%;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+}
+.anggota .sosial {
+  width: 30%;
+}
+.anggota .deskripsi {
+  width: 80%;
+  align-items: center;
+}
 .anggota img {
-  padding-right: 30px;
   height: 180px;
 }
-
+.anggota .sosial img {
+  height: auto;
+  width: 30px;
+}
+.anggota .sosial li {
+  list-style: none;
+  align-items: center;
+}
 .anggota p {
   padding-top: 20px;
+}
+.anggota h4 {
+  color: #003566;
 }
 
 /* footer*/

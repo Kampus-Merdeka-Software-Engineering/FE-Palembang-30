@@ -40,33 +40,38 @@ Warna Kuning = #ffe74c
 
 /*dashboard 1*/
 .wrapper-dash1 {
-  /* margin: none; */
+  margin: none;
   display: flex;
   align-items: center;
   padding: 40px 7%;
   min-height: 100vh;
+  /* width: 100%; */
+
   /* padding: 80px;
   padding-left: 200px; */
   /* background-image: url("dash1bg.png"); */
 }
 
 .left-dash1 {
-  /* width: 800px; */
-  /* height: 300px; */
-  /* padding: 1rem 5em; */
   padding-top: 80px;
-  border-radius: 50px;
   align-items: center;
+  width: 90%;
+  gap: 10px;
 }
-
+.right-dash1 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
 .right-dash1 img {
   width: 300px;
-  padding: 1rem 5em;
+  /* padding: 1rem 5em; */
 }
 
-.left-dash1 p {
+/* .left-dash1 p {
   padding: 2rem 0em;
-}
+} */
 .left-dash1 h1 span {
   color: #003566;
 }
@@ -75,7 +80,6 @@ Warna Kuning = #ffe74c
 
 .layanan-container h1 {
   text-align: center;
-  /* padding-bottom: 50px; */
 }
 .layanan-container {
   display: flex;
@@ -84,35 +88,25 @@ Warna Kuning = #ffe74c
   /* width: 100%; */
   text-align: center;
   padding: 30px 7%;
-  max-height: 100vh;
+  min-height: 100vh;
   border-top: 1px solid grey;
 }
 .layanan-container .layanan {
   display: flex;
   justify-content: space-evenly;
   padding: 10px 7%;
-  /* gap: 50px; */
-
-  /* display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-left: 350px;
-  width: 900px;
-  height: 500px;
-  padding: 7%; */
+  flex-wrap: wrap;
 }
 
 .layanan .left-dash2 {
   display: flex;
   flex-direction: column;
-  /* padding: 3rem 3em; */
   width: 200px;
 }
 
 .layanan .center-dash2 {
   display: flex;
   flex-direction: column;
-  /* padding: 3rem 3em; */
   width: 200px;
 }
 
@@ -209,22 +203,14 @@ Warna Kuning = #ffe74c
 .artikel-container {
   text-align: center;
   padding-top: 30px;
-  max-height: 100vh;
+  min-height: 100vh;
 }
-/* .artikel-container h1 {
-  text-align: center;
-} */
-
-/* .section-dash4 h3 {
-  text-align: center;
-  margin-top: 40px;
-} */
 
 .news {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+
   padding: 7%;
   padding-top: 30px;
   /* padding: 3rem 1em; */
@@ -235,6 +221,7 @@ Warna Kuning = #ffe74c
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .news img {
   width: 300px;
@@ -316,7 +303,7 @@ Warna Kuning = #ffe74c
   background-color: #011c36;
 }
 
-/* dashboard 5*/
+/* dashboard 5 User Story*/
 
 .section-dash5 {
   min-height: 100vh;
@@ -331,12 +318,14 @@ Warna Kuning = #ffe74c
 }
 
 .section-dash5 .story {
-  height: 500px;
+  min-height: 100vh;
   margin-top: -150px;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
+  flex-wrap: wrap;
   z-index: 2;
+  padding-bottom: 50px;
 }
 .section-dash5 .card {
   display: flex;
@@ -404,47 +393,34 @@ Warna Kuning = #ffe74c
 /* ============== dashboard 6 ============ */
 
 .section-dash6 {
-  max-height: 100vh;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* padding: 400px 0; */
-  padding: 7%;
-  /* margin: none; */
+  min-height: 100vh;
+  padding: 20px 7%;
   align-items: center;
-  /* position: relative; */
+  border-top: 1px solid grey;
 }
 .section-dash6 .dash6-container {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 
-.section-dash6 .left {
+.section-dash6 .kontak-kami {
   height: 500px;
-  width: 600px;
-  padding-top: 100px;
-  /* padding-left: 40px; */
+  width: 40%;
+  /* padding-top: 100px; */
 }
 
 .section-dash6 .left img {
   width: 30px;
   float: left;
-  /* padding-top: 10px; */
 }
 
-.section-dash6 .left h3 {
+.section-dash6 .left h4 {
   padding: 0px;
 }
-
-/* .section-dash6 .left h4 {
-  padding-bottom: 30px;
-  padding-top: 20px;
-  padding-left: 10px;
-  display: flex;
-} */
 .section-dash6 .right {
-  height: 500px;
-  width: 700px;
-  /* padding-left: 40px; */
+  height: auto;
+  width: 60%;
 }
 .section-dash6 .kontak {
   display: flex;
@@ -457,13 +433,16 @@ Warna Kuning = #ffe74c
 .form-group {
   margin-bottom: 15px;
 }
+.form-group-btn {
+  text-align: right;
+}
 .form-label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
 }
 .form-input {
-  width: 400px;
+  width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -552,13 +531,21 @@ Warna Kuning = #ffe74c
     font-weight: 400;
     text-align: justify;
   }
+  .wrapper-dash1 .right-dash1 {
+    justify-content: center;
+    align-items: center;
+  }
+  /* Dashboard 2 Layanan */
+
   .layanan-container {
     min-height: 100vh;
   }
   .layanan-container .layanan {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    align-items: center;
   }
   /* Cek Diabetes */
   .check-up {
@@ -577,6 +564,14 @@ Warna Kuning = #ffe74c
   .check-up .right button {
     font-size: 12px;
   }
+  /* Diabetes News */
+  .artikel-container h1 {
+    font-size: 20px;
+  }
+  .news .artikel {
+    justify-content: center;
+    gap: 30px;
+  }
 
   /* User Story */
   .container-dash5 {
@@ -586,10 +581,34 @@ Warna Kuning = #ffe74c
     font-size: 20px;
   }
   .container-dash5 .atas p {
-    font-size: 12px;
+    font-size: 14px;
   }
   .container-dash5 .story {
+    align-items: center;
+    gap: 30px;
+  }
+
+  /* Feedback Form */
+  .section-dash6 .dash6-container {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+  }
+  .dash6-container .kontak-kami {
+    padding-top: 20px;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .dash6-container .left h1 {
+    font-size: 20px;
+  }
+  .dash6-container .right {
+    width: 100%;
+  }
+  .dash6-container .right h1 {
+    font-size: 20px;
+  }
+  .dash6-container .right p {
+    font-size: 12px;
+    text-align: justify;
   }
 }

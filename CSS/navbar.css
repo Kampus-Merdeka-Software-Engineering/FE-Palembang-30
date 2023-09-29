@@ -44,6 +44,11 @@ nav .Navbar-click li a:hover {
   color: #fcfcfc;
   transition: 0.3s linear;
 }
+nav .Navbar-click .active {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #003566;
+}
 nav ul li a::after {
   content: "";
   display: block;

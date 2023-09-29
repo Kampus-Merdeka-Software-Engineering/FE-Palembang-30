@@ -36,6 +36,7 @@ body {
   align-items: flex-start;
   padding: 50px;
   justify-content: center;
+  gap: 15px;
 }
 .anggota .profil {
   width: 30%;
@@ -45,6 +46,10 @@ body {
 }
 .anggota .sosial {
   width: 30%;
+}
+.anggota .sosial .logo {
+  display: flex;
+  gap: 10px;
 }
 .anggota .deskripsi {
   width: 80%;
@@ -93,8 +98,39 @@ body {
 /* Responsive Breakpoint*/
 
 /*Ukuran Breakpoint*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 630px) {
   nav ul {
     width: 40%;
+  }
+  .anggota {
+    flex-direction: column;
+    height: auto;
+    padding: 30px;
+  }
+  .anggota .profil {
+    align-items: center;
+    width: 100%;
+  }
+  .anggota .deskripsi {
+    width: 100%;
+  }
+  .anggota .deskripsi h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .anggota .deskripsi h4 {
+    font-size: 14px;
+    text-align: center;
+  }
+  .anggota .deskripsi p {
+    font-size: 12px;
+    text-align: justify;
+  }
+  .anggota .sosial {
+    width: 100%;
+    text-align: center;
+  }
+  .anggota .sosial .logo {
+    justify-content: center;
   }
 }

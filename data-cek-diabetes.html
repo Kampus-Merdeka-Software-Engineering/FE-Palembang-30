@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="CSS/admin.css" />
+  <style>
+    /* Tambahkan gaya tambahan di sini jika diperlukan */
+    .action-icon {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar1"></div>
+  <div class="sidebar">
+    <div class="header">
+      <div class="h3">Data Utama</div>
+    </div>
+    <a href="data-cek-diabetes.html">Data Cek Diabetes</a>
+    <a href="daftar_dokter.html">Data Dokter</a>
+    <a href="#analytics">Data Feedback</a>
+
+    <section class="footerr">
+      <div class="foot-content">
+        <div class="logo">
+          <a><img src="asset/logo.png" alt="LesSugar" /></a>
+        </div>
+        <div class="text">
+          <h5>Copyright.2023 | by Group 30 Section Palembang</h5>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="content">
+    <h1>Data Cek Diabetes</h1>
+    <div class="data-table" id="data-table">
+      <div class="data-row">
+        <div class="data-cell">No</div>
+        <div class="data-cell">Nama</div>
+        <div class="data-cell">Email</div>
+        <div class="data-cell">Umur</div>
+        <div class="data-cell">Jenis Kelamin</div>
+        <div class="data-cell">Action</div>
+      </div>
+      <div class="data-row">
+        <div class="data-cell">1</div>
+        <div class="data-cell" id="nama-1">Katarina</div>
+        <div class="data-cell" id="email-1">katarina@Gmail.com</div>
+        <div class="data-cell" id="umur-1">20</div>
+        <div class="data-cell" id="jenis-kelamin-1">Perempuan</div>
+        <div class="data-cell">
+          <img src="asset/edit.jpg" alt="Edit" class="action-icon" onclick="editData(1)">
+          <img src="asset/delete.jpg" alt="Delete" class="action-icon" onclick="deleteData(1)">
+        </div>
+        </div>
+    
+        <div class="data-row">
+          <div class="data-cell">2</div>
+          <div class="data-cell" id="nama-2">Crhiristina</div>
+          <div class="data-cell" id="email-2">crhiristina@Gmail.com</div>
+          <div class="data-cell" id="umur-2">57</div>
+          <div class="data-cell" id="jenis-kelamin-2">Perempuan</div>
+          <div class="data-cell">
+            <img src="asset/edit.jpg" alt="Edit" class="action-icon" onclick="editData(2)">
+            <img src="asset/delete.jpg" alt="Delete" class="action-icon" onclick="deleteData(2)">
+          </div>
+          </div>
+          
+          <div class="data-row">
+            <div class="data-cell">3</div>
+            <div class="data-cell" id="nama-3">Naje</div>
+            <div class="data-cell" id="email-3">naje@Gmail.com</div>
+            <div class="data-cell" id="umur-3">23</div>
+            <div class="data-cell" id="jenis-kelamin-3">Laki-Laki</div>
+            <div class="data-cell">
+              <img src="asset/edit.jpg" alt="Edit" class="action-icon" onclick="editData(3)">
+              <img src="asset/delete.jpg" alt="Delete" class="action-icon" onclick="deleteData(3)">
+            </div>
+      </div>
+      <!-- Tambahkan baris lain jika diperlukan -->
+    </div>
+  </div>
+  <script src="JS/admin.js"></script>
+</body>
+</html>

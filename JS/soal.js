@@ -130,21 +130,21 @@ submitBtn.addEventListener("click", () => {
       loadQuiz();
     } else {
       if (akhir < 30) {
-        quiz.innerHTML = `<h2> ${akhir} % Have Diabetes, Entered the <h1>LOW category</h1></h2>
+        quiz.innerHTML = `<h2> ${akhir} % Have Diabetes, Entered the <h1>LOW CATEGORY</h1></h2>
         
         <button onclick="location.reload()">Reload</button>
         
         <button onclick="location.href='index.html'">Kembali</button>
         `;
       } else if (akhir < 80) {
-        quiz.innerHTML = `<h2> ${akhir} % Have Diabetes, Entered the <h1>MEDIUM category</h1></h2>
+        quiz.innerHTML = `<h2> ${akhir} % Have Diabetes, Entered the <h1>MEDIUM CATEGORY</h1></h2>
         
         <button onclick="location.reload()">Reload</button>
         
         <button onclick="location.href='index.html'">Kembali</button>
         `;
       } else {
-        quiz.innerHTML = `<h2> ${akhir} % Have Diabetes, Entered the <h1>HIGH category</h1></h2>
+        quiz.innerHTML = `<h2> ${akhir} % Have Diabetes, Entered the <h1>HIGH CATEGORY</h1></h2>
         
         <button onclick="location.reload()">Reload</button>
         

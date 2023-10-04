@@ -12,16 +12,13 @@ body {
   min-height: 100vh;
   display: flex;
   width: 100%;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
-  /* padding: 20px 7%; */
 }
 .kotak1 {
   height: 300px;
   width: 100%;
   top: 60px;
-  /* padding: 20px 7%; */
   background-color: #ffe74c;
   text-align: center;
 }
@@ -35,50 +32,49 @@ body {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+  flex-wrap: wrap;
   z-index: 2;
-  /* width: 100%; */
   padding-top: -50px;
-  padding: 5px 7%;
-  height: 500px;
+  padding: 15px 7%;
+  min-height: 500px;
   margin-top: -100px;
-  /* top: 190px; */
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*dashboard 2*/
-/* .section-dash2 {
-  /*background-color: #FFC300;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  height: 600px;
-  margin: none;
-  margin-left: -50px;
-}
-
-.section-dash2 h1 {
-  text-align: center;
-  padding-bottom: 50px;
-  margin-left: 200px;
-}
-
-.layanan {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-left: 350px;
-  width: 900px;
-  height: 500px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-} */
 
 .layanan .left-dash2 {
   display: flex;
   flex-direction: column;
   padding: 3rem 3em;
+  width: auto;
 }
-.text1 {
-  padding-left: 25px;
+.layanan .text1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  background-color: #ffe74c;
+  border: 1px solid grey;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  stroke: none;
+  width: 202px;
+  height: auto;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  cursor: pointer;
+}
+.layanan .text1 button {
+  width: 150px;
+  padding: 5px 10px;
+  background-color: #003566;
+  border: none;
+  border-radius: 5px;
+  color: white;
 }
 .layanan .center-dash2 {
   display: flex;
@@ -106,24 +102,11 @@ body {
 
 .layanan img {
   width: 200px;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   border: 1px solid grey;
   /* box-shadow: 3px 2px 2px 2px grey; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.layanan button {
-  background-color: #ffe74c;
-  border: 1px solid grey;
-  /* box-shadow: 3px 2px 2px 2px grey; */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  stroke: none;
-  width: 202px;
-  height: 60px;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  cursor: pointer;
 }
 
 /* =================== */
@@ -185,9 +168,25 @@ body {
 /* ========== RESPONSIVE PAGE ============== */
 
 /*ukuran tablet*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 630px) {
   nav ul {
     width: 50%;
+  }
+
+  .layanan {
+    padding: 0;
+  }
+  .layanan .left-dash2 {
+    padding: 10px;
+  }
+  .layanan .center-dash2 {
+    padding: 10px;
+  }
+  .kotak1 h1 {
+    font-size: 25px;
+  }
+  .kotak1 p {
+    font-size: 12px;
   }
 }
 /*ukuran mobile*/

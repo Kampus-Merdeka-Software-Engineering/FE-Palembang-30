@@ -114,6 +114,14 @@ a:visited {
   transition: all 0.5s;
 }
 
+/* Ukuran Tablet */
+@media (max-width: 956px) {
+  .Navbar .Navbar-click {
+    font-size: 13px;
+  }
+}
+
+/* Ukuran Hp */
 @media (max-width: 630px) {
   html {
     font-size: 62.5%;

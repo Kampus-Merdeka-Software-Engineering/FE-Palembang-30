@@ -27,17 +27,23 @@ body {
 }
 .layanan {
   padding: 10px 7%;
+  width: 86%;
+  align-items: center;
+  justify-content: center;
 }
 .layanan .isi {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 10px;
   z-index: 2;
   padding-top: -50px;
   padding: 15px 7%;
   min-height: 500px;
   margin-top: -100px;
+  width: 86%;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -47,7 +53,7 @@ body {
 .layanan .left-dash2 {
   display: flex;
   flex-direction: column;
-  padding: 3rem 3em;
+  /* padding: 2rem 3em; */
   width: auto;
 }
 .layanan .text1 {
@@ -79,10 +85,7 @@ body {
 .layanan .center-dash2 {
   display: flex;
   flex-direction: column;
-  padding: 3rem 3em;
-}
-.text2 {
-  padding-left: 25px;
+  /* padding: 2rem 3em; */
 }
 
 .percentage {
@@ -94,10 +97,7 @@ body {
 .layanan .right-dash2 {
   display: flex;
   flex-direction: column;
-  padding: 3rem 3em;
-}
-.text3 {
-  padding-left: 30px;
+  /* padding: 2rem 3em; */
 }
 
 .layanan img {
@@ -105,7 +105,6 @@ body {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border: 1px solid grey;
-  /* box-shadow: 3px 2px 2px 2px grey; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -167,7 +166,7 @@ body {
 
 /* ========== RESPONSIVE PAGE ============== */
 
-/*ukuran tablet*/
+/*ukuran mobile*/
 @media screen and (max-width: 630px) {
   nav ul {
     width: 50%;
@@ -175,6 +174,7 @@ body {
 
   .layanan {
     padding: 0;
+    width: 100%;
   }
   .layanan .left-dash2 {
     padding: 10px;
@@ -189,7 +189,3 @@ body {
     font-size: 12px;
   }
 }
-/*ukuran mobile*/
-/* @media screen and (max-width: 576px) {
- 
-} */

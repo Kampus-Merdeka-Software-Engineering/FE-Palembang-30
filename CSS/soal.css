@@ -71,7 +71,6 @@ body {
   padding: 3rem;
 }
 h2 {
-  /* padding: 1rem; */
   text-align: center;
   margin: 0;
 }
@@ -79,16 +78,18 @@ h2 {
 ul {
   list-style-type: none;
   padding: 0;
+  display: flex;
+  gap: 40px;
 }
 ul li {
   font-size: 1.2rem;
-  /* margin: 1rem 0; */
+  width: 50%;
 }
 ul li label {
   cursor: pointer;
 }
 button {
-  background-color: #03cae4;
+  background-color: #003566;
   color: #fff;
   border: none;
   display: block;
@@ -101,11 +102,39 @@ button {
   border-radius: 10px;
 }
 button:hover {
-  background-color: #04adc4;
+  background-color: #05508d;
 }
 button:focus {
   outline: none;
   background-color: #44b927;
+}
+
+input[type="radio"] {
+  display: none;
+  width: 50%;
+}
+label {
+  display: block;
+  height: auto;
+  display: block;
+  background: white;
+  border: 2px solid #003566;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 2rem;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0px 3px 10px -2px hsla(150, 5%, 65%, 0.5);
+  position: relative;
+  font-weight: bold;
+}
+label:hover {
+  background-color: #44b927;
+}
+input[type="radio"]:checked + label {
+  background: #003566;
+  color: hsla(215, 0%, 100%, 1);
+  box-shadow: 0px 0px 10px #003566;
 }
 
 /* FOOTER */

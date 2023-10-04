@@ -32,21 +32,16 @@ body {
 }
 .kotak2 {
   padding: 10px 7%;
-  /* width: 100%; */
 }
 .kotak2 .isi {
   display: flex;
   justify-content: center;
-  /* align-items: center;
-      text-align: center; */
   flex-direction: row;
   z-index: 2;
-  /* width: 90%; */
   padding-top: -50px;
   padding: 5px 7%;
   min-height: 500px;
   margin-top: -100px;
-  /* top: 190px; */
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -67,9 +62,6 @@ body {
   width: 50%;
   padding: 40px;
 }
-/* .isi {
-  display: flex;
-} */
 
 /* Form */
 .form-group {
@@ -114,6 +106,15 @@ body {
 }
 .form-button:hover {
   background-color: #032341;
+}
+.form-radio {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+.jenis-kelamin {
+  display: flex;
+  gap: 10px;
 }
 
 /* Footer */

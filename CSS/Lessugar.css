@@ -13,31 +13,6 @@ Warna Biru = #003566
 Warna Kuning = #ffe74c
 */
 
-/*hamburger menu animation*/
-/* .menu-toggle span:nth-child(2) {
-  transform-origin: 0 0;
-}
-
-.menu-toggle span:nth-child(4) {
-  transform-origin: 0 100%;
-}
-
-.menu-toggle input :checked ~ span:nth-child(2) {
-  transform: rotate(45deg);
-}
-
-.menu-toggle input :checked ~ span:nth-child(4) {
-  transform: rotate(-45deg);
-}
-.menu-toggle input {
-  position: absolute;
-  width: 40px;
-  height: 28px;
-  left: -5px;
-  top: -3;
-  cursor: pointer;
-} */
-
 /*dashboard 1*/
 .wrapper-dash1 {
   margin: none;
@@ -45,10 +20,6 @@ Warna Kuning = #ffe74c
   align-items: center;
   padding: 40px 7%;
   min-height: 100vh;
-  /* width: 100%; */
-
-  /* padding: 80px;
-  padding-left: 200px; */
   /* background-image: url("dash1bg.png"); */
 }
 
@@ -66,12 +37,7 @@ Warna Kuning = #ffe74c
 }
 .right-dash1 img {
   width: 300px;
-  /* padding: 1rem 5em; */
 }
-
-/* .left-dash1 p {
-  padding: 2rem 0em;
-} */
 .left-dash1 h1 span {
   color: #003566;
 }
@@ -85,11 +51,34 @@ Warna Kuning = #ffe74c
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /* width: 100%; */
   text-align: center;
   padding: 30px 7%;
   min-height: 100vh;
   border-top: 1px solid grey;
+  gap: 20px;
+}
+.layanan-container .line {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.layanan-container h4:nth-child(1) {
+  border-bottom: 3px solid #003566;
+  padding: 10px;
+  width: auto;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.layanan-container h4:nth-child(2) {
+  border-bottom: 3px solid #003566;
+  padding: 10px;
+  text-align: center;
+}
+.layanan-container h4:nth-child(3) {
+  border-bottom: 3px solid #003566;
+  padding: 10px;
+  width: auto;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .layanan-container .layanan {
   display: flex;

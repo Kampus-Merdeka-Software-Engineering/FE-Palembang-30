@@ -218,7 +218,7 @@ Warna Kuning = #ffe74c
   /* padding: 20px; */
 }
 .news .artikel .left {
-  width: 300px;
+  width: 350px;
   /* background-color: #ffe74c; */
   background-color: #fff;
   /* border: 1px solid grey; */
@@ -231,7 +231,7 @@ Warna Kuning = #ffe74c
 }
 
 .news .artikel .center {
-  width: 300px;
+  width: 350px;
   height: fit-content;
   /* background-color: #ffe74c; */
   background-color: #fff;
@@ -245,7 +245,7 @@ Warna Kuning = #ffe74c
 }
 
 .news .artikel .right {
-  width: 300px;
+  width: 350px;
   /* background-color: #ffe74c; */
   background-color: #fff;
   border-radius: 25px;
@@ -299,7 +299,7 @@ Warna Kuning = #ffe74c
 }
 
 .section-dash5 .atas {
-  height: 300px;
+  height: 260px;
   background-color: #ffe74c;
   align-items: center;
   text-align: center;
@@ -316,7 +316,7 @@ Warna Kuning = #ffe74c
   z-index: 2;
   padding-bottom: 50px;
 }
-.section-dash5 .card {
+/*.section-dash5 .card {
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -331,7 +331,7 @@ Warna Kuning = #ffe74c
   cursor: pointer;
   padding: 10px;
   text-align: justify;
-}
+}*/
 
 .section-dash5 h1 {
   text-align: center;

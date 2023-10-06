@@ -41,11 +41,11 @@
           <h1>Data Dokter</h1>
           <thead class="data-table" id="data-table">
             <tr>
-              <th>No</th>
+              <th>id</th>
               <th>name</th>
-              <th>username</th>
               <th>email</th>
-              <th>address</th>
+              <th>jabatan</th>
+              <th>phone_number</th>
               <th>action</th>
             </tr>
           </thead>
@@ -56,7 +56,7 @@
 
     <script>
       // URL JSON yang akan diambil data-nya
-      const url = "https://jsonplaceholder.typicode.com/users";
+      const url = "https://be-palembang-30.vercel.app/doctors";
 
       // Ambil data dari URL JSON menggunakan fetch
       fetch(url)
@@ -79,84 +79,16 @@
 
             cell1.textContent = item.id;
             cell2.textContent = item.name;
-            cell3.textContent = item.username;
-            cell4.textContent = item.email;
-            cell5.textContent = item.address.city;
+            cell3.textContent = item.email;
+            cell4.textContent = item.jabatan;
+            cell5.textContent = item.phone_number;
           });
         })
         .catch((error) => {
           console.error("Terjadi kesalahan:", error);
         });
     </script>
-    <!-- <div class="sidebar">
-    <div class="header">
-      <div class="h3">Data Utama</div>
-    </div>
-    <a href="data-cek-diabetes.html">Data Cek Diabetes</a>
-    <a href="daftar_dokter.html">Data Dokter</a>
-    <a href="data-feedback.html">Data Feedback</a>
 
-    <section class="footerr">
-      <div class="foot-content">
-        <div class="logo">
-          <a><img src="asset/logo.png" alt="LesSugar" /></a>
-        </div>
-        <div class="text">
-          <h5>Copyright.2023 | by Group 30 Section Palembang</h5>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <div class="content">
-    <h1>Data Dokter</h1>
-    <div class="data-table" id="data-table">
-      <div class="data-row">
-        <div class="data-cell">No</div>
-        <div class="data-cell">Nama</div>
-        <div class="data-cell">Email</div>
-        <div class="data-cell">Jabatan</div>
-        <div class="data-cell">No HP</div>
-        <div class="data-cell">Action</div>
-      </div>
-      <div class="data-row">
-        <div class="data-cell">1</div>
-        <div class="data-cell" id="nama-1">dr.Jojo Sp.PD-KEMD</div>
-        <div class="data-cell" id="email-1">jojo@Gmail.com</div>
-        <div class="data-cell" id="jabatan-1">Dokter Spesialis</div>
-        <div class="data-cell" id="no-hp-1">123-456-7890</div>
-        <div class="data-cell">
-          <img src="asset/edit.jpg" alt="Edit" class="action-icon" onclick="editData(1)">
-          <img src="asset/delete.jpg" alt="Delete" class="action-icon" onclick="deleteData(1)">
-        </div>
-        </div>
-    
-        <div class="data-row">
-          <div class="data-cell">2</div>
-          <div class="data-cell" id="nama-2">dr.Mark Sp.PD-KEMD</div>
-          <div class="data-cell" id="email-2">Mark@Gmail.com</div>
-          <div class="data-cell" id="jabatan-2">Dokter Spesialis</div>
-          <div class="data-cell" id="no-hp-2">123-456-6743</div>
-          <div class="data-cell">
-            <img src="asset/edit.jpg" alt="Edit" class="action-icon" onclick="editData(2)">
-            <img src="asset/delete.jpg" alt="Delete" class="action-icon" onclick="deleteData(2)">
-          </div>
-          </div>
-          
-          <div class="data-row">
-            <div class="data-cell">3</div>
-            <div class="data-cell" id="nama-3">dr.lisa Sp.PD-KEMD</div>
-            <div class="data-cell" id="email-3">Lisa@Gmail.com</div>
-            <div class="data-cell" id="jabatan-3">Dokter Spesialis</div>
-            <div class="data-cell" id="no-hp-3">123-456-8344</div>
-            <div class="data-cell">
-              <img src="asset/edit.jpg" alt="Edit" class="action-icon" onclick="editData(3)">
-              <img src="asset/delete.jpg" alt="Delete" class="action-icon" onclick="deleteData(3)">
-            </div>
-      </div>
-       Tambahkan baris lain jika diperlukan 
-    </div>
-  </div>
-  <script src="JS/admin.js"></script> -->
+    <script src="JS/admin.js"></script>
   </body>
 </html>

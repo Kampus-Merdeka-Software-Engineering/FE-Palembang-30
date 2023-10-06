@@ -1,5 +1,5 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -8,7 +8,11 @@ body {
   height: 60px;
   background-color: #f7d231;
 }
-
+.isi {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
 .header {
   background-color: #000000;
   color: white;
@@ -18,8 +22,8 @@ body {
 }
 
 .h3 {
- padding-top: 15px;
- margin-right: 48px;
+  padding-top: 15px;
+  margin-right: 48px;
 }
 .sidebar {
   height: 100%;
@@ -50,8 +54,12 @@ body {
 
 /* Untuk responsif (misalnya tampilan pada layar kecil) */
 @media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 16px;}
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 16px;
+  }
 }
 
 /*bawah*/
@@ -83,6 +91,21 @@ body {
 }
 
 /*table*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 
 .data-table {
   margin: 20px;

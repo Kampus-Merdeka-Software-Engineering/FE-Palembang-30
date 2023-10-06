@@ -1,21 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Dashboard</title>
-  <link rel="stylesheet" href="CSS/admin.css" />
-  <style>
-    /* Tambahkan gaya tambahan di sini jika diperlukan */
-    .action-icon {
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
-  <div class="sidebar1"></div>
-  <div class="sidebar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="CSS/admin.css" />
+    <style>
+      /* Tambahkan gaya tambahan di sini jika diperlukan */
+      .action-icon {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar1"></div>
+    <div class="isi">
+      <div class="sidebar">
+        <div class="header">
+          <div class="h3">Data Utama</div>
+        </div>
+        <a href="data-cek-diabetes.html">Data Cek Diabetes</a>
+        <a href="daftar_dokter.html">Data Dokter</a>
+        <a href="data-feedback.html">Data Feedback</a>
+
+        <section class="footerr">
+          <div class="foot-content">
+            <div class="logo">
+              <!-- <a><img src="asset/logo.png" alt="LesSugar" /></a> -->
+            </div>
+            <div class="text">
+              <h5>Copyright.2023 | by Group 30 Section Palembang</h5>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="content">
+        <table id="data-table">
+          <h1>Data Dokter</h1>
+          <thead class="data-table" id="data-table">
+            <tr>
+              <th>No</th>
+              <th>name</th>
+              <th>username</th>
+              <th>email</th>
+              <th>address</th>
+              <th>action</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script>
+      // URL JSON yang akan diambil data-nya
+      const url = "https://jsonplaceholder.typicode.com/users";
+
+      // Ambil data dari URL JSON menggunakan fetch
+      fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
+          // Dapatkan elemen tabel
+          const table = document
+            .getElementById("data-table")
+            .getElementsByTagName("tbody")[0];
+
+          // Loop melalui data JSON dan tambahkan ke tabel
+          data.forEach((item) => {
+            const row = table.insertRow();
+            const cell1 = row.insertCell(0);
+            const cell2 = row.insertCell(1);
+            const cell3 = row.insertCell(2);
+            const cell4 = row.insertCell(3);
+            const cell5 = row.insertCell(4);
+            const cell6 = row.insertCell(5);
+
+            cell1.textContent = item.id;
+            cell2.textContent = item.name;
+            cell3.textContent = item.username;
+            cell4.textContent = item.email;
+            cell5.textContent = item.address.city;
+          });
+        })
+        .catch((error) => {
+          console.error("Terjadi kesalahan:", error);
+        });
+    </script>
+    <!-- <div class="sidebar">
     <div class="header">
       <div class="h3">Data Utama</div>
     </div>
@@ -81,9 +154,9 @@
               <img src="asset/delete.jpg" alt="Delete" class="action-icon" onclick="deleteData(3)">
             </div>
       </div>
-      <!-- Tambahkan baris lain jika diperlukan -->
+       Tambahkan baris lain jika diperlukan 
     </div>
   </div>
-  <script src="JS/admin.js"></script>
-</body>
+  <script src="JS/admin.js"></script> -->
+  </body>
 </html>

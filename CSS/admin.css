@@ -3,7 +3,10 @@ body {
   margin: 0;
   padding: 0;
 }
-
+.isi .sidebar .active {
+  background-color: #003566;
+  color: #fff;
+}
 .sidebar1 {
   height: 60px;
   background-color: #f7d231;
@@ -45,6 +48,7 @@ body {
 
 .sidebar a:hover {
   color: #f1f1f1;
+  background-color: #03305a77;
 }
 
 .content {
@@ -131,6 +135,19 @@ tr:nth-child(even) {
   height: 20px;
   cursor: pointer;
   margin-right: 5px;
+}
+
+.data-table tr th:nth-child(2) {
+  min-width: 200px;
+}
+.data-table tr th:nth-child(3) {
+  min-width: 200px;
+}
+.data-table tr th:nth-child(4) {
+  min-width: 100px;
+}
+.data-table tr th:nth-child(5) {
+  min-width: 350px;
 }
 
 /* Untuk responsif (misalnya tampilan pada layar kecil) */

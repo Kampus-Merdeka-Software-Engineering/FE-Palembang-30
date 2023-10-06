@@ -57,7 +57,7 @@
         </div>
         <div class="layanan" id="layanan">
           <div class="isi">
-            <div class="left-dash2">
+            <!-- <div class="left-dash2">
               <img src="asset/Dokter1.jpg" alt="" />
               <div class="text1">
                 <h4>dr.Jojo Sp.PD-KEMD</h4>
@@ -86,7 +86,7 @@
                   <button>Ask</button>
                 </a>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -103,6 +103,37 @@
         <h5>Copyright.2023 | by Group 30 Section Palembang</h5>
       </footer>
     </section>
+    <script>
+      const ambilData = async () => {
+        const response = await fetch(
+          "https://be-palembang-30.vercel.app/doctors"
+        );
+        const doctors = await response.json();
+        console.log(doctors);
+
+        const h = "text/html";
+        let parser = new DOMParser();
+
+        doctors.forEach((doctor) => {
+          let doctorStr = `
+                    <div class="left-dash2">
+                        <img src="asset/Dokter1.jpg" />
+                        <div class="text1">
+                          <h4>${doctor.name}</h4>
+                          <p>${doctor.jabatan}</p>
+                          <h5>${doctor.email}</h5>
+                          <p>${doctor.phone_number}</p>
+                        </div>
+                    </div>
+                `;
+          let el = parser.parseFromString(doctorStr, h);
+          let root = document.querySelector("div.isi");
+          root.appendChild(el.body.firstChild);
+        });
+      };
+
+      ambilData();
+    </script>
     <script>
       feather.replace();
     </script>

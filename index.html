@@ -16,6 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css"
+    />
     <!-- Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
@@ -407,50 +411,35 @@
               demi kemajuan website ini.
             </p>
             <!-- <section class="feedback-form"> -->
-            <div class="form-group">
-              <label class="form-label" for="Name">Nama : </label>
-              <input
-                class="form-input"
-                type="text"
-                name="Nama"
-                id="Nama"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="Email">Email : </label>
-              <input
-                class="form-input"
-                type="text"
-                name="Email"
-                id="Emai"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="Subjek">Subjek : </label>
-              <input
-                class="form-input"
-                type="text"
-                name="Subjek"
-                id="Subjek"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="Pesan">Pesan : </label>
-              <textarea
-                class="form-input"
-                name="feedback"
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="Tulis kritik, saran, maupun pesan anda di sini"
-              ></textarea>
-            </div>
-            <div class="form-group-btn">
-              <button class="form-button">Kirim</button>
-            </div>
+            <form id="form-feedback">
+              <div class="form-group">
+                <label class="form-label" for="Name">Nama : </label>
+                <input class="form-input" type="text" id=nama1" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="Email">Email : </label>
+                <input class="form-input" type="text" id="email" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="Subjek">Subjek : </label>
+                <input class="form-input" type="text" id="subjek" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="Pesan">Pesan : </label>
+                <textarea
+                  class="form-input"
+                  id="pesan"
+                  cols="30"
+                  rows="10"
+                  placeholder="Tulis kritik, saran, maupun pesan anda di sini"
+                ></textarea>
+              </div>
+              <div class="form-group-btn">
+                <button type="submit" class="form-button" id="btn-send">
+                  Kirim
+                </button>
+              </div>
+            </form>
             <!-- </section> -->
           </div>
         </div>
@@ -471,12 +460,14 @@
       </section>
     </div>
 
+    <script src="JS/POST_Feedback.js"></script>
     <script>
       feather.replace();
     </script>
     <script src="JS/Lessugar.js"></script>
     <script src="JS/swiper-bundle.min.js"></script>
-    <script src="JS/script.js"></script>
+    <!-- <script src="JS/script.js"></script> -->
     <script src="JS/swippercard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
   </body>
 </html>

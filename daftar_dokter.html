@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
     <title>Dashboard</title>
     <link rel="stylesheet" href="CSS/admin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css"
+    />
     <style>
       /* Tambahkan gaya tambahan di sini jika diperlukan */
       .action-icon {
@@ -38,58 +42,53 @@
 
       <div class="content">
         <table id="data-table">
-          <h1>Data Dokter</h1>
+          <div class="atas">
+            <h1>Data Dokter</h1>
+            <div class="btn-admin">
+              <button id="btn-refresh" onclick="tampilData()">Refresh</button>
+              <button id="btn-add">Tambah Dokter</button>
+            </div>
+          </div>
           <thead class="data-table" id="data-table">
             <tr>
-              <th>id</th>
-              <th>name</th>
-              <th>email</th>
-              <th>jabatan</th>
-              <th>phone_number</th>
-              <th>action</th>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Jabatan</th>
+              <th>No HP</th>
+              <th>Aksi</th>
             </tr>
           </thead>
           <tbody></tbody>
         </table>
       </div>
+      <div class="popup">
+        <form id="data-form" class="popup-content">
+          <button class="close">X</button>
+          <h1>Tambah Data Dokter</h1>
+          <input id="nama" type="text" placeholder="nama" />
+          <input id="jabatan" type="text" placeholder="jabatan" />
+          <input id="email" type="email" placeholder="email" />
+          <input id="phone" type="number" placeholder="phone" />
+          <button type="submit" id="btn-simpan">Simpan</button>
+        </form>
+      </div>
+      <div class="popup-edit">
+        <form id="edit-form" class="popup-content-2">
+          <button class="close">X</button>
+          <h1>Edit Data Dokter</h1>
+          <input id="id_edit" type="number" placeholder="id" disabled />
+          <input id="nama_edit" type="text" placeholder="nama" />
+          <input id="jabatan_edit" type="text" placeholder="jabatan" />
+          <input id="email_edit" type="email" placeholder="email" />
+          <input id="phone_edit" type="number" placeholder="phone" />
+          <button type="submit" id="btn-edit-simpan">Simpan</button>
+        </form>
+      </div>
     </div>
 
-    <script>
-      // URL JSON yang akan diambil data-nya
-      const url = "https://be-palembang-30.vercel.app/doctors";
-
-      // Ambil data dari URL JSON menggunakan fetch
-      fetch(url)
-        .then((response) => response.json())
-        .then((data) => {
-          // Dapatkan elemen tabel
-          const table = document
-            .getElementById("data-table")
-            .getElementsByTagName("tbody")[0];
-          let index = 1;
-          // Loop melalui data JSON dan tambahkan ke tabel
-          data.forEach((item) => {
-            const row = table.insertRow();
-            const cell1 = row.insertCell(0);
-            const cell2 = row.insertCell(1);
-            const cell3 = row.insertCell(2);
-            const cell4 = row.insertCell(3);
-            const cell5 = row.insertCell(4);
-            const cell6 = row.insertCell(5);
-
-            cell1.textContent = index;
-            cell2.textContent = item.name;
-            cell3.textContent = item.email;
-            cell4.textContent = item.jabatan;
-            cell5.textContent = item.phone_number;
-            index++;
-          });
-        })
-        .catch((error) => {
-          console.error("Terjadi kesalahan:", error);
-        });
-    </script>
-
-    <script src="JS/admin.js"></script>
+    <script src="JS/fetch_API_doctors.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
+    <!-- <script src="JS/admin.js"></script> -->
   </body>
 </html>

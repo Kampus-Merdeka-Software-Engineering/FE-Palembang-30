@@ -60,14 +60,14 @@
             <img src="asset/profile.jpg" alt="gambar" />
           </div>
           <div class="col2">
-            <form onsubmit="">
+            <form id="form-cek">
               <h2>Enter Your Identity</h2>
               <div class="form-group">
                 <label class="form-label" for="name">Name :</label>
                 <input
                   class="form-input"
                   type="text"
-                  id="name"
+                  id="nama"
                   name="name"
                   required
                 />
@@ -84,7 +84,7 @@
               </div>
               <div class="form-group">
                 <label class="form-label" for="name">Age :</label>
-                <input class="form-input" id="message" name="age" required />
+                <input class="form-input" id="age" name="age" required />
               </div>
               <label class="form-label" for="name">Gender :</label>
               <div class="form-radio">
@@ -92,9 +92,9 @@
                   <input
                     class="radio"
                     type="radio"
-                    id="message"
+                    id="jk"
                     name="jk"
-                    value="male"
+                    value="Laki-laki"
                     required
                   />
                   <label class="form-label" for="name">Male</label>
@@ -103,16 +103,18 @@
                   <input
                     class="radio"
                     type="radio"
-                    id="message"
+                    id="jk"
                     name="jk"
-                    value="female"
+                    value="Perempuan"
                     required
                   />
                   <label class="form-label" for="name">Female</label>
                 </div>
               </div>
               <a href="#"
-                ><button class="form-button" type="submit">Kirim</button></a
+                ><button class="form-button" id="btn-kirim" type="submit">
+                  Kirim
+                </button></a
               >
             </form>
           </div>
@@ -134,6 +136,7 @@
     <script>
       feather.replace();
     </script>
+    <script src="JS/POST_CekDiabetes.js"></script>
     <script src="JS/Lessugar.js"></script>
   </body>
 </html>

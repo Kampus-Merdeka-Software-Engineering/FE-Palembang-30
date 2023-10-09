@@ -12,16 +12,16 @@
     <div class="wrapper">
       <span class="icon-close"><ion-icon name="close"></ion-icon> </span>
 
-      <div class="form-box login">
+      <div id="login-form" class="form-box login">
         <h2>Login</h2>
         <form action="#">
           <div class="input-box">
             <span class="icon"><ion-icon name="person"></ion-icon></span>
-            <input type="username" placeholder="Username" required />
+            <input type="username" id="username-login" placeholder="Username" required />
           </div>
           <div class="input-box">
             <span class="icon"><ion-icon name="eye-off"></ion-icon></span>
-            <input type="password" placeholder="Password" required />
+            <input type="password" id="password-login" placeholder="Password" required />
           </div>
           <div class="remember-forgot">
             <label><input type="checkbox" /> Remember me</label>
@@ -42,26 +42,26 @@
 
       <div class="form-box register">
         <h2>Registration</h2>
-        <form action="#">
+        <form id="registration-form" action="#">
           <div class="input-box">
             <span class="icon"><ion-icon name="person"></ion-icon></span>
-            <input type="text" placeholder="Username" required />
+            <input type="text" id="username" placeholder="Username" required />
           </div>
           <div class="input-box">
             <span class="icon"><ion-icon name="mail"></ion-icon></span>
-            <input type="email" placeholder="Email" required />
+            <input type="email" id="email" placeholder="Email" required />
           </div>
           <div class="input-box">
             <span class="icon"><ion-icon name="eye-off"></ion-icon></span>
-            <input type="password" placeholder="Password" required />
+            <input type="password" id="password" placeholder="Password" required />
           </div>
           <div class="input-box">
             <span class="icon"><ion-icon name="eye-off"></ion-icon></span>
-            <input type="password" placeholder="Password" required />
+            <input type="password" id="confirm-password" placeholder="Password" required />
           </div>
           <div class="remember-forgot">
             <label
-              ><input type="checkbox" /> I agree to the terms &
+              ><input type="checkbox" id="agree-terms" /> I agree to the terms &
               conditions</label
             >
           </div>

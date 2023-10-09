@@ -87,7 +87,7 @@ async function editData(id, value_editData) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(value_editData),
-      credentials: "include",
+      // credentials: "include",
     }
   );
 

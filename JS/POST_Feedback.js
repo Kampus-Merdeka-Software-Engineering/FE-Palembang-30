@@ -10,8 +10,8 @@ async function kirimData(newData) {
   });
   if (response.ok) {
     // return response.json();
-    // Swal.fire("Sukses", "Berhasil simpan data", "success");
-    alert("sukses");
+    Swal.fire("Sukses", "Berhasil simpan data", "success");
+    // alert("sukses");
   } else {
     console.error("Gagal mengirim data ke API");
   }
@@ -26,6 +26,7 @@ formFeedback.addEventListener("click", function (event) {
   const subjekInput = document.getElementById("subjek");
   const pesanInput = document.getElementById("pesan");
 
+  console.log(namaInput);
   const newData = {
     name: namaInput.value,
     email: emailInput.value,

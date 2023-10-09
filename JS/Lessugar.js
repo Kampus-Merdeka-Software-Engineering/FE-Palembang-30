@@ -10,7 +10,7 @@ document.querySelector(".login").addEventListener("click", () => {
   window.location.href = "login.html";
 });
 document.querySelector("#btn-cek").addEventListener("click", () => {
-  window.location.href = "soal_diabetes.html";
+  window.location.href = "cek_diabetes.html";
 });
 
 // const menuToggle = document.querySelector(".menu-toggle");

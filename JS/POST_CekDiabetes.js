@@ -10,23 +10,19 @@ async function postData(newData) {
   });
   if (response.ok) {
     // return response.json();
-    const Toast = Swal.mixin({
-      toast: true,
-      position: "top-end",
-      showConfirmButton: false,
-      timer: 3000,
-      timerProgressBar: true,
-      didOpen: (toast) => {
-        toast.addEventListener("mouseenter", Swal.stopTimer);
-        toast.addEventListener("mouseleave", Swal.resumeTimer);
-      },
+    Swal.fire({
+      title: "Next",
+      text: "Jawab 10 pertanyaan sesuai dengan kondisi anda sekarang",
+      icon: "info",
+      showCancelButton: false,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Next",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location.href = "soal_diabetes.html";
+      }
     });
-
-    Toast.fire({
-      icon: "success",
-      title: "Data berhasil ditambah",
-    });
-    window.location.href = "soal_diabetes.html";
   } else {
     console.error("Gagal mengirim data ke API");
   }

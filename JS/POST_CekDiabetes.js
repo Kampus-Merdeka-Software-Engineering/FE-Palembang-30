@@ -36,7 +36,9 @@ dataForm.addEventListener("click", function (event) {
   const emailInput = document.querySelector("#email");
   const ageInput = document.querySelector("#age");
   const jkInput = document.querySelector("#jk");
+  // const selectJk = document.querySelector('input[name="jk"]:checked').value;
 
+  // const jenis_kelamin = { jk: selectJk };
   const newData = {
     name: namaInput.value,
     email: emailInput.value,

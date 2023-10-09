@@ -18,13 +18,13 @@ async function kirimData(newData) {
 }
 
 // HANDLE UNTUK MENGAMBIL DATA DARI INPUTAN UNTUK SIMPAN DATA _____(POST)______
-const formFeedback = document.querySelector("#btn-send");
+const formFeedback = document.getElementById("btn-send");
 formFeedback.addEventListener("click", function (event) {
   event.preventDefault();
-  const namaInput = document.querySelector("#nama1");
-  const emailInput = document.querySelector("#email");
-  const subjekInput = document.querySelector("#subjek");
-  const pesanInput = document.querySelector("#pesan");
+  const namaInput = document.getElementById("nama1");
+  const emailInput = document.getElementById("email");
+  const subjekInput = document.getElementById("subjek");
+  const pesanInput = document.getElementById("pesan");
 
   const newData = {
     name: namaInput.value,

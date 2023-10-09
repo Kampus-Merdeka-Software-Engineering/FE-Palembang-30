@@ -28,7 +28,6 @@ async function tampilData() {
                       <td>${item.email}</td>
                       <td>${item.age}</td>
                       <td>${item.gender}</td>
-                      <td>${item.result}</td>
                       <td>
                           <button class="btn-delete" onclick="deleteData(${item.id})">Delete</button>
                       </td>

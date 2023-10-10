@@ -1,3 +1,5 @@
+/* STYLE CSS UNTUK MENU DAHBOARD LANDING PAGE */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,24 +11,30 @@ body {
 }
 
 /* 
+==========WARNA UTAMA WEB PAGE======
 Warna Biru = #003566
 Warna Kuning = #ffe74c
 */
 
-/*dashboard 1*/
+/* CONTEN UTAMA LANDING PAGE */
+.Container-wrapper {
+  width: 100%;
+  /* overflow-x: none; */
+}
+
+/* DASHBOARD 1 START (WELCOME WEB PAGE)*/
 .wrapper-dash1 {
   margin: none;
   display: flex;
   align-items: center;
   padding: 40px 7%;
   min-height: 100vh;
-  /* background-image: url("dash1bg.png"); */
 }
 
 .left-dash1 {
   padding-top: 80px;
   align-items: center;
-  width: 90%;
+  width: 100%;
   gap: 10px;
 }
 .right-dash1 {
@@ -41,9 +49,9 @@ Warna Kuning = #ffe74c
 .left-dash1 h1 span {
   color: #003566;
 }
+/* DASHBOARD 1 END (WELCOME WEB PAGE)*/
 
-/* =======  dashboard 2 start ========== */
-
+/* DASHBOARD 2 START (LAYANAN)*/
 .layanan-container h1 {
   text-align: center;
 }
@@ -102,7 +110,6 @@ Warna Kuning = #ffe74c
 .layanan .right-dash2 {
   display: flex;
   flex-direction: column;
-  /* padding: 3rem 3em; */
   width: 200px;
 }
 
@@ -120,7 +127,6 @@ Warna Kuning = #ffe74c
   background-color: #ffe74c;
   border: 1px solid grey;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  /* box-shadow: 3px 2px 2px 2px grey; */
   stroke: none;
   width: 202px;
   height: 60px;
@@ -128,16 +134,15 @@ Warna Kuning = #ffe74c
   border-bottom-right-radius: 25px;
   cursor: pointer;
 }
-/* dashboard 2 end */
+/* DASHBOARD 2 END (LAYANAN)*/
 
-/* dashboard 3 start*/
-
+/* DASHBOARD 3 START (DIABETES CHECK)*/
 .check-up {
   display: flex;
   background-color: #ffe74c;
   padding: 70px 7%;
-  max-height: 100vh;
-  /* padding-left: 200px; */
+  min-height: 100vh;
+  width: 100%;
 }
 
 .check-up .left {
@@ -171,8 +176,6 @@ Warna Kuning = #ffe74c
 
 .check-up button {
   cursor: pointer;
-  /* height: 50px; */
-  /* width: 110px; */
   padding: 15px 20px;
   background-color: #003566;
   border-radius: 20px;
@@ -184,11 +187,9 @@ Warna Kuning = #ffe74c
 .check-up button:hover {
   background-color: #001b35;
 }
-/* .check-up p {
-    
-} */
+/* DASHBOARD 3 END (DIABETES CHECK)*/
 
-/* dashboard 4*/
+/* DASHBOARD 4 START (DIABETES NEWS)*/
 .artikel-container {
   text-align: center;
   padding-top: 30px;
@@ -199,12 +200,8 @@ Warna Kuning = #ffe74c
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   padding: 7%;
   padding-top: 30px;
-  /* padding: 3rem 1em; */
-  /* margin-left: 40px;
-  margin-right: 40px; */
 }
 .news .artikel {
   display: flex;
@@ -215,15 +212,11 @@ Warna Kuning = #ffe74c
 .news img {
   width: 300px;
   border-radius: 15px;
-  /* padding: 20px; */
 }
 .news .artikel .left {
   width: 350px;
-  /* background-color: #ffe74c; */
   background-color: #fff;
-  /* border: 1px solid grey; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  /* box-shadow: 0px 3px 2px 1px grey; */
   border-radius: 25px;
   height: 400px;
   cursor: pointer;
@@ -233,9 +226,7 @@ Warna Kuning = #ffe74c
 .news .artikel .center {
   width: 350px;
   height: fit-content;
-  /* background-color: #ffe74c; */
   background-color: #fff;
-  /* border: 1px solid grey; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   /* box-shadow: 0px 3px 2px 1px grey; */
   border-radius: 25px;
@@ -246,10 +237,8 @@ Warna Kuning = #ffe74c
 
 .news .artikel .right {
   width: 350px;
-  /* background-color: #ffe74c; */
   background-color: #fff;
   border-radius: 25px;
-  /* border: 1px solid grey; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   /* box-shadow: 0px 3px 2px 1px grey; */
   height: 400px;
@@ -258,8 +247,6 @@ Warna Kuning = #ffe74c
 }
 
 .news h4 {
-  /* padding-left: 65px;
-  width: 300px;  */
   text-align: center;
 }
 
@@ -286,14 +273,13 @@ Warna Kuning = #ffe74c
   border: none;
   float: right;
   align-items: center;
-  /* margin-right: 120px; */
 }
 .news .more button:hover {
   background-color: #011c36;
 }
+/* DASHBOARD 4 END (DIABETES NEWS)*/
 
-/* dashboard 5 User Story*/
-
+/* DASHBOARD 5 START (USER STORY)*/
 .section-dash5 {
   min-height: 100vh;
 }
@@ -315,6 +301,7 @@ Warna Kuning = #ffe74c
   flex-wrap: wrap;
   z-index: 2;
   padding-bottom: 50px;
+  padding: 20px 7%;
 }
 /*.section-dash5 .card {
   display: flex;
@@ -378,9 +365,9 @@ Warna Kuning = #ffe74c
   color: #ffffff;
   cursor: pointer;
 }
+/* DASHBOARD 5 END (USER STORY)*/
 
-/* ============== dashboard 6 ============ */
-
+/* DASHBOARD 6 START (CONTACK AND FEEDBACK)*/
 .section-dash6 {
   min-height: 100vh;
   padding: 20px 7%;
@@ -396,7 +383,6 @@ Warna Kuning = #ffe74c
 .section-dash6 .kontak-kami {
   height: 500px;
   width: 40%;
-  /* padding-top: 100px; */
 }
 
 .section-dash6 .left img {
@@ -464,8 +450,9 @@ Warna Kuning = #ffe74c
 .form-button:hover {
   background-color: #032341;
 }
+/* DASHBOARD 6 END (CONTACK AND FEEDBACK)*/
 
-/* =============== FOOTER ============= */
+/* DASHBOARD 7 START (FOOTER)*/
 .footerr .foot-content {
   display: flex;
   flex-direction: column;
@@ -491,8 +478,9 @@ Warna Kuning = #ffe74c
   height: auto;
   width: 80px;
 }
+/* DASHBOARD 7 END (FOOTER)*/
 
-/* =========== Responsive Breakpoint ============ */
+/* RESPONSIF BREAKPOINT*/
 
 /*Ukuran Tablet*/
 @media screen and (max-width: 900px) {
@@ -511,6 +499,7 @@ Warna Kuning = #ffe74c
   /* Dashboard 1 */
   .wrapper-dash1 {
     display: block;
+    padding: 20px 7%;
   }
   .left-dash1 h1 {
     font-size: 20px;
@@ -521,11 +510,11 @@ Warna Kuning = #ffe74c
     text-align: justify;
   }
   .wrapper-dash1 .right-dash1 {
-    justify-content: center;
     align-items: center;
+    width: 100%;
   }
-  /* Dashboard 2 Layanan */
 
+  /* Dashboard 2 Layanan */
   .layanan-container {
     min-height: 100vh;
   }
@@ -536,13 +525,28 @@ Warna Kuning = #ffe74c
     gap: 30px;
     align-items: center;
   }
-  /* Cek Diabetes */
+  .layanan-container h4:nth-child(1) {
+    border-bottom: 3px solid #003566;
+    padding: 10px;
+    width: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .layanan-container h4:nth-child(3) {
+    border-bottom: 3px solid #003566;
+    padding: 10px;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /* Cek Diabetes Dash 3 */
   .check-up {
     display: block;
   }
   .check-up .left img {
     width: 70%;
-    border-radius: 15px;
+    border-radius: 10px;
   }
   .check-up .right h1 {
     font-size: 20px;
@@ -553,7 +557,8 @@ Warna Kuning = #ffe74c
   .check-up .right button {
     font-size: 12px;
   }
-  /* Diabetes News */
+
+  /* Dashboard 4 Diabetes News */
   .artikel-container h1 {
     font-size: 20px;
   }
@@ -562,7 +567,7 @@ Warna Kuning = #ffe74c
     gap: 30px;
   }
 
-  /* User Story */
+  /* Dashboard 5 User Story */
   .container-dash5 {
     min-height: 100vh;
   }
@@ -577,7 +582,7 @@ Warna Kuning = #ffe74c
     gap: 30px;
   }
 
-  /* Feedback Form */
+  /* Dashboard 6 Feedback Form */
   .section-dash6 .dash6-container {
     display: flex;
     flex-direction: column;

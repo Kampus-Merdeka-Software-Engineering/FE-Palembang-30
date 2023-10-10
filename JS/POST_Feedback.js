@@ -10,8 +10,13 @@ async function kirimData(newData) {
   });
   if (response.ok) {
     // return response.json();
-    Swal.fire("Sukses", "Berhasil simpan data", "success");
-    // alert("sukses");
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "Thank You For The Feedback",
+      showConfirmButton: false,
+      timer: 2000,
+    });
   } else {
     console.error("Gagal mengirim data ke API");
   }

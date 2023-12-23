@@ -20,7 +20,7 @@ document.querySelector(".close").addEventListener("click", function () {
 });
 
 // URL JSON yang akan diambil data-nya
-const url = "https://be-palembang-30.vercel.app/doctors";
+const url = "https://backend-capstone-lessugar.vercel.app/doctors";
 
 // FUNGSI UNTUK MENGAMBIL DATA JSON DARI URL _____(GET)______
 async function fetchData() {

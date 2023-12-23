@@ -1,4 +1,4 @@
-const url = "https://be-palembang-30.vercel.app/feedbacks";
+const url = "https://backend-capstone-lessugar.vercel.app/feedbacks";
 // FUNGSI UNTUK MENGIRIM DATA _____(POST)______
 async function kirimData(newData) {
   const response = await fetch(url, {
@@ -47,7 +47,9 @@ formFeedback.addEventListener("click", function (event) {
 
 // UNTUK MEMANGGIL DATA UNTUK DITAMPILKAN KE USER TESTIMONIAL _____(POST)_____
 const ambilData = async () => {
-  const response = await fetch("https://be-palembang-30.vercel.app/feedbacks");
+  const response = await fetch(
+    "https://backend-capstone-lessugar.vercel.app/feedbacks"
+  );
   const feedbacks = await response.json();
   console.log(feedbacks);
 

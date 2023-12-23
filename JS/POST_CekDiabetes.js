@@ -1,4 +1,4 @@
-const url = "https://be-palembang-30.vercel.app/diabetesChecks";
+const url = "https://backend-capstone-lessugar.vercel.app/diabetesChecks";
 // FUNGSI UNTUK MENGIRIM DATA _____(POST)______
 async function postData(newData) {
   const response = await fetch(url, {

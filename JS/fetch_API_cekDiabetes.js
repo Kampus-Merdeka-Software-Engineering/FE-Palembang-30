@@ -1,5 +1,6 @@
 // URL JSON yang akan diambil data-nya
-const url = "https://be-palembang-30.vercel.app/diabetesChecks";
+// const url = "https://be-palembang-30.vercel.app/diabetesChecks"
+const url = "https://backend-capstone-lessugar.vercel.app/diabetesChecks";
 
 // FUNGSI UNTUK MENGAMBIL DATA JSON DARI URL _____(GET)______
 async function fetchData() {

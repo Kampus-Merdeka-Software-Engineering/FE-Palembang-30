@@ -78,6 +78,22 @@ const quizData = [
   },
 ];
 
+// Penambahan hasil cek dengan variabel Result
+const Result = [
+  {
+    rekomendasi:
+      "pertahankan kondisi ini dan hindari makanan dan minuman tinggi gula",
+  },
+  {
+    rekomendasi:
+      "kurangi kondisi ini dan hindari makanan dan minuman tinggi gula",
+  },
+  {
+    rekomendasi:
+      "Hentikan kondisi ini dan hindari makanan dan minuman tinggi gula",
+  },
+];
+
 const quiz = document.getElementById("quiz");
 const answerEls = document.querySelectorAll(".answer");
 const questionEl = document.getElementById("question");
@@ -89,6 +105,10 @@ const submitBtn = document.getElementById("submit");
 let currentQuiz = 0;
 let score = 0;
 let akhir = 0;
+// Pendefinisian nomor result
+let currentRek1 = 0;
+let currentRek2 = 1;
+let currentRek3 = 2;
 
 loadQuiz();
 
@@ -101,6 +121,32 @@ function loadQuiz() {
   questionEl.innerText = currentQuizData.question;
   a_text.innerText = currentQuizData.a;
   b_text.innerText = currentQuizData.b;
+}
+
+// Penambahan function loadResult
+function loadResult1() {
+  let currentRekomendasi = Result[currentRek1];
+  quiz.innerHTML = `<h2> ${akhir} % Have Diabetes, Entered the <h1>LOW CATEGORY</h1></h2>
+        
+        <p>${currentRekomendasi.rekomendasi}</p>
+        <button onclick="location.href='index.html'">Kembali</button>
+        `;
+}
+function loadResult2() {
+  let currentRekomendasi = Result[currentRek2];
+  quiz.innerHTML = `<h2> ${akhir} % Have Diabetes, Entered the <h1>LOW CATEGORY</h1></h2>
+        
+        <p>${currentRekomendasi.rekomendasi}</p>
+        <button onclick="location.href='index.html'">Kembali</button>
+        `;
+}
+function loadResult3() {
+  let currentRekomendasi = Result[currentRek3];
+  quiz.innerHTML = `<h2> ${akhir} % Have Diabetes, Entered the <h1>LOW CATEGORY</h1></h2>
+        
+        <p>${currentRekomendasi.rekomendasi}</p>
+        <button onclick="location.href='index.html'">Kembali</button>
+        `;
 }
 
 function deselectAnswers() {
@@ -133,16 +179,21 @@ submitBtn.addEventListener("click", () => {
         quiz.innerHTML = `<h2> ${akhir} % Have Diabetes, Entered the <h1>LOW CATEGORY</h1></h2>
         
         <button onclick="location.href='index.html'">Kembali</button>
+        <button onclick="loadResult1()">Result</button>
+
         `;
       } else if (akhir < 80) {
         quiz.innerHTML = `<h2> ${akhir} % Have Diabetes, Entered the <h1>MEDIUM CATEGORY</h1></h2>
         
         <button onclick="location.href='index.html'">Kembali</button>
+        <button onclick="loadResult2()">Result</button>
         `;
       } else {
         quiz.innerHTML = `<h2> ${akhir} % Have Diabetes, Entered the <h1>HIGH CATEGORY</h1></h2>
         
         <button onclick="location.href='index.html'">Kembali</button>
+        <button onclick="loadResult3()">Result</button>
+
         `;
         // <button onclick="location.reload()">Reload</button>
       }

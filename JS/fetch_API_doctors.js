@@ -80,7 +80,7 @@ async function panggilEditData(id) {
 // FUNGSI UNTUK MENGEDIT DATA _____(PUT)______
 async function editData(id, value_editData) {
   const response = await fetch(
-    `https://be-palembang-30.vercel.app/doctors/${id}`,
+    `https://backend-capstone-lessugar.vercel.app/doctors/${id}`,
     {
       method: "PUT",
       headers: {
@@ -105,7 +105,7 @@ async function editData(id, value_editData) {
 async function fetchDataById(id) {
   try {
     const response = await fetch(
-      `https://be-palembang-30.vercel.app/doctors/${id}`
+      `https://backend-capstone-lessugar.vercel.app/doctors/${id}`
     );
     const data = await response.json();
     return data;
@@ -150,7 +150,7 @@ async function deleteData(id) {
 
   if (confirm.isConfirmed) {
     try {
-      const url_delete = `https://be-palembang-30.vercel.app/doctors/${id}`;
+      const url_delete = `https://backend-capstone-lessugar.vercel.app/doctors/${id}`;
 
       const response = await fetch(url_delete, {
         method: "DELETE",

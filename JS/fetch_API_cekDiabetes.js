@@ -54,7 +54,7 @@ async function deleteData(id) {
 
   if (confirm.isConfirmed) {
     try {
-      const url_delete = `https://be-palembang-30.vercel.app/diabetesChecks/${id}`;
+      const url_delete = `https://backend-capstone-lessugar.vercel.app/diabetesChecks/${id}`;
 
       const response = await fetch(url_delete, {
         method: "DELETE",

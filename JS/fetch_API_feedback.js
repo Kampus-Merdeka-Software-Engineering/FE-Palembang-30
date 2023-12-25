@@ -1,5 +1,5 @@
 // URL JSON yang akan diambil data-nya
-const url = "https://be-palembang-30.vercel.app/feedbacks";
+const url = "https://backend-capstone-lessugar.vercel.app/feedbacks";
 
 // FUNGSI UNTUK MENGAMBIL DATA JSON DARI URL _____(GET)______
 async function fetchData() {
@@ -53,7 +53,7 @@ async function deleteData(id) {
 
   if (confirm.isConfirmed) {
     try {
-      const url_delete = `https://be-palembang-30.vercel.app/feedbacks/${id}`;
+      const url_delete = `https://backend-capstone-lessugar.vercel.app/feedbacks/${id}`;
 
       const response = await fetch(url_delete, {
         method: "DELETE",
